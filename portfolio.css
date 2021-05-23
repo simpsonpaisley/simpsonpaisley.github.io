@@ -1,0 +1,355 @@
+/** Color Scheme - #FBE8A6, #F4976C, #303C6C, #B4DFE5, #D2FDFF **/
+* {
+  font-family: Helvetica;
+
+  }
+
+body
+{
+  background-color: #FBE8A6;
+  padding: 10;
+  margin: 10;
+
+}
+#description {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns:repeat(3,0.98fr);
+  grid-template-rows: repeat(auto);
+  background-color: #FBE8A6;
+  grid-gap: 10px;
+  grid-template-areas: "header header header"
+                       "nav nav nav"
+                       "main main main"
+                       "figure figure figure"
+                       "figcaption figcaption figcaption"
+                       "footer footer footer";
+}
+
+#maintitle {
+  font-size: 150px;
+
+  color: #F4976C;
+  text-shadow: 5px 5px 0px #303C6C;
+  display: flex;
+  justify-content: center;
+  grid-area: header;
+
+}
+
+nav {
+
+  width: 100vw;
+  background-color: #303C6C;
+  padding: 5px;
+  grid-area: nav;
+}
+
+.navitem {
+  list-style-type: none;
+  font-size: 20px;
+  padding-left: 10px;
+}
+#navlist {
+  display : flex;
+  text-decoration: none;
+  flex-direction: row;
+
+
+  }
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #F4976C
+
+
+}
+a:hover {
+  background-color: #B4DFE5;
+  color: #F4976C;
+  padding: 10px;
+
+}
+#hidden {
+  display: none;
+}
+main {
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+color: #303C6C;
+font-weight: bold;
+font-size: 50px;
+}
+p {
+  color: #303C6C;
+  font-size: 25px;
+
+}
+figure {
+  grid-area: figure;
+  display: flex;
+  justify-content: center;
+}
+img {
+  padding: 10px;
+  background-color: #F4976C;
+  background-size: contain;
+  box-shadow: 7px 7px 0px #303C6C;
+
+}
+figcaption {
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+  grid-area: figcaption;
+  display: flex;
+  justify-content: center;
+  color: #303C6C;
+  font-size: 25px;
+}
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: flex-start;
+  align-content: center;
+  background-color: #F4976C;
+  opacity: 80%
+}
+#contactfooter {
+  padding: 10px;
+}
+
+#facebook {
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  box-shadow: 0px 0px 0px;
+}
+
+/** About Me CSS **/
+
+#aboutcontent {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: repeat(9, auto);
+  background-color: #FBE8A6;
+  grid-gap: 10px;
+  grid-template-areas: "header header header"
+                       "nav nav nav"
+                       "sub sub sub"
+                       "skip skip skip"
+                       "article article article"
+                       "academic academic academic"
+                       "cv cv cv "
+                       "additional additional additional"
+                       "additionalqualifications additionalqualifications additionalqualifications"
+                       "skillstitle skillstitle skillstitle"
+                       "skills skills skills"
+                       "footer footer footer"
+}
+.sectitle {
+  display: flex;
+  justify-content: center;
+  font-size: 90px;
+  color:#F4976C;
+  text-shadow: 3px 3px 0px #303C6C;
+}
+#abouttitle {
+
+ grid-area: sub;
+}
+#about {
+  grid-area: article;
+  padding: 10px;
+}
+
+#skip {
+  background-color: #F4976C;
+  color: #303C6C;
+  box-shadow: 7px 7px 0px #303C6C;
+  padding: 5px;
+  font-size: 30px;
+  font-weight: bold;
+  grid-area: skip;
+}
+
+#skip:hover {
+  background-color: #B4DFE5;
+}
+
+article {
+
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+
+}
+
+#cv {
+  grid-area: cv;
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+}
+
+.academic {
+
+  font-size: 30px;
+  color: #303C6C;
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+  padding: 10px;
+}
+#qualifications {
+  grid-area: academic;
+}
+.school {
+  background-color: #303C6C
+  color: #F4976C
+}
+#university {
+  grid-area: university;
+  color: #303C6C
+}
+
+#alevels {
+  grid-area: alevels;
+  color: #303C6C;
+}
+
+#gcse {
+  grid-area: gcse;
+  color:#303C6C;
+}
+#additional {
+  grid-area: additional;
+}
+
+#additionalqualifications {
+  grid-area: additionalqualifications;
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+  color: #303C6C;
+}
+
+#skillstitle {
+  grid-area: skillstitle;
+}
+
+#skills {
+  grid-area: skills;
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+  color: #303C6C;
+
+}
+
+/** Contact CSS **/
+
+#contact {
+  width: auto;
+  height: auto;
+  display: grid;
+  grid-template-columns:repeat(3,1fr);
+  grid-template-rows: repeat(9, auto);
+  background-color: #FBE8A6;
+  grid-gap: 10px;
+  grid-template-areas: "contacttitle contacttitle contacttitle"
+                        "info info info"
+                        "form form form"
+                        "button button button"
+                        "footer footer footer";
+
+}
+
+#contacttitle {
+  grid-area: contacttitle;
+  display: flex;
+  justify-content: center;
+}
+
+#contactinfo {
+  grid-area: info;
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+}
+
+#form
+{
+  grid-area: form;
+  display: table;
+}
+#send {
+  grid-area: button;
+}
+.linkcontact {
+  color: #303C6C;
+  font-weight: bold;
+}
+
+
+.contacttable {
+  display: table-rows;
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+  color: #303C6C;
+  padding: 10px;
+}
+
+input {
+  background-color: #FBE8A6;
+  box-shadow: 2px 2px 0px #303C6C;
+  display:table-cell;
+}
+label {
+  display: table-cell;
+  font-weight: bold;
+  font-size: 25px;
+}
+textarea {
+  background-color: #FBE8A6;
+  box-shadow: 2px 2px 0px #303C6C;
+  display: table-cell;
+}
+
+#send {
+  background-color: #F4976C;
+  box-shadow: 7px 7px 0px #303C6C;
+  padding: 10px;
+}
+
+
+/** For Phones and small screens **/
+@media only screen and (max-width: 500px) {
+  #navlist {
+    flex-direction: column;
+  }
+  a {
+    display: block;
+  }
+  #hidden {
+    display: block;
+    font-size: 3vw;
+    padding: 2vw;
+    background-color: #303C6C;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #F4976C;
+    align-self: flex-start;
+
+  }
+  #hidden:hover {
+    background-color: #B4DFE5;
+    color: F4976C
+  }
+}
