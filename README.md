@@ -1,2 +1,0 @@
-# simpsonpaisley.github.io
- 
